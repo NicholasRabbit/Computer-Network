@@ -1,2 +1,2 @@
 # Computer-Network
-I'll put codes which are relate to computer network here.
+I'll put codes about computer network here.
