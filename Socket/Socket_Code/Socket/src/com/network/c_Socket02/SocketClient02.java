@@ -21,7 +21,7 @@ public class SocketClient02 {
             //3,把输出流转换为字符流
             writer = new BufferedWriter(new OutputStreamWriter(out));
             writer.write("Hello Server! I'm a client buffer.");
-            writer.flush();     //write()方法写完要刷新流
+            writer.flush();     //flush()刷新流,把字符缓冲区的数据全部写入到数据流中，防止没发送完。
             //4,调用shutdownOutput(),告诉服务器后面不再发送消息了，否则服务器会一直等待
             client.shutdownOutput();
             //5,获取服务端传来的字节流数据
