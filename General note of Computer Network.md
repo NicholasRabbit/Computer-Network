@@ -22,3 +22,13 @@ HTTP协议也成为无状态协议。
 同一台客户端第一连接断开之后，第二次连接后，服务器无法识别是来自同一个客户的连接，此成为无状态协议。因此引入了Cookie来储存用户状态，跟踪用户浏览记录，保存登录状态等。Cookie由服务端生成，保存在用户浏览器本地中。
 
 参考：https://zhuanlan.zhihu.com/p/131256002
+
+#### 3, traceroute 命令
+
+traceroute(Linux)/tracert(Windows) : 跟踪分组到达目标地址所走过的路由路径，预设发送包是40Kb，可自定义
+
+参考：https://www.cnblogs.com/machangwei-8/p/10353279.html#_label4_1
+
+有三组数据，是因为每次发三个测试包。
+
+![1696638356895](note-images/1696638356895.png)
