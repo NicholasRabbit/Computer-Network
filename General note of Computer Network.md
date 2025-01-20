@@ -34,3 +34,27 @@ traceroute(Linux)/tracert(Windows) : 跟踪分组到达目标地址所走过的�
 有三组数据，是因为每次发三个测试包。
 
 ![1696638356895](note-images/1696638356895.png)
+
+### 3, Notes of HTTP
+
+##### 1)  The symbol `+` in the parameters of a request will be converted to ' '(whitespace)  in URL.
+
+Because the symbol `+` is a reserved character in HTTP protocol, web applications transfer it to a whitespace when encoutering it. 
+
+For instance,  in `/foo?params=abc+xyz` the sever end will receive `abc xyz` so it is necessary to encode the URL.
+
+```java
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+
+public class UrlEncoding {
+    public static void main(String[] args) throws UnsupportedEncodingException {
+        String param = "abc+xyz";
+        String encodedParam = URLEncoder.encode(param, "UTF-8");
+        System.out.println(encodedParam);  // Output: abc%2Bxyz
+    }
+}
+```
+
+
+
