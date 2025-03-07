@@ -37,11 +37,11 @@ traceroute(Linux)/tracert(Windows) : 跟踪分组到达目标地址所走过的�
 
 ### 3, Notes of HTTP
 
-##### 1)  The symbol `+` in the parameters of a request will be converted to ' '(whitespace)  in URL.
+##### 1)  Caution: the symbol `+` in the parameters of the URI of a request will be converted to '  '(whitespace)  in a URL.
 
 Because the symbol `+` is a reserved character in HTTP protocol, web applications transfer it to a whitespace when encoutering it. 
 
-For instance,  in `/foo?params=abc+xyz` the sever end will receive `abc xyz` so it is necessary to encode the URL.
+For instance,  in `/foo?params=abc+xyz` the sever end will receive `abc xyz`; so it is necessary to encode the URL.
 
 ```java
 import java.io.UnsupportedEncodingException;
