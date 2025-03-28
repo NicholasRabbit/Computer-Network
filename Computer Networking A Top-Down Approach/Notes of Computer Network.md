@@ -1,0 +1,28 @@
+### 1，学习建议
+
+<a href="https://csdiy.wiki/en/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/topdown/">计算机网络学习指导</a>
+
+以下课程难度由易到难。他人学习资料参照在个人网盘本课程文件夹里。
+
+（1）中文课程：计算机网络( 郑烇、杨坚 )课程。
+
+  学习建议：这门课应该是中文互联网上比较火的计算机网络课了，教材采用神书计算机网络（自顶向下方法），   授课风格更偏向实际而非纯理论（**强烈建议**先阅读教材预习再看课，否则上课时*可能*会有些懵圈）。 
+
+（2）原书作者出的教程：
+
+UMass课程(课件，作业等) <a href=" https://gaia.cs.umass.edu/kurose_ross/index.php ">Course</a>
+
+每节课的试验都要跟着做，否则听完了感觉都会，实际并没有掌握，边做边学，这样才能把知识牢固地掌握。
+
+
+
+（3）CS144 ( Offered by: Stanford )：
+
+CS144课程(课件，作业等)：<a href="https://cs144.github.io/">Course</a>
+
+```txt
+One of the lecturers of this course is Professor Nick McKeown, a giant in the field of Networking. At the end of each chapter of MOOC, he will interview an executive in the industry or an expert in the academia, which can certainly broaden your horizons.
+
+In the projects, you will use C++ to build the entire TCP/IP protocol stack, the IP router, and the ARP protocol step by step from scratch. Finally, you will replace Linux Kernel's protocol stack with your own and use socket programming to communicate with your classmates, which is really amazing and exciting.
+```
+
