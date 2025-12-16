@@ -83,3 +83,12 @@ TCP协议头部格式，和Wireshark解析出的数据是一一对应的
 
 ![1696316704034](note-images/1696316704034.png)
 
+#### 6, Display Format of Time
+
+If we want Wireshark to display a date format we are familiar with, we can change the format by selecting  "View" on the pull down menu.
+
+`View -> Time Display Format -> Time of Day`
+
+#### 7, Print 
+
+Select "Print" from "File" of the pull down menu. We can print selected packets only. 
