@@ -54,6 +54,14 @@ Suppose there are 10 cars as a group driving through the tollbooth A, each car n
 
 Also suppose tollbooth B is 100 kilometres from tollbooth A, the caravan accelerate instantaneously to 100 km/h. The time from A to B is 1 hour. This is propagation delay.
 
+#### 1.4.2 Queuing Delay and Packet Loss
+
+(1) Why is the queue increased when the traffic intensity is 1 (La/R) the packets arrive in burst by periodically?
+
+The reason is that if there are n packets arrive at a switch, only the first packet can be transmitted without delay. The queuing delay of the rest will be more significant as the number of the packets increase. As a matter of fact, when packets arrive randomly, queuing delay and packet loss will eventually occur if the traffic intensity is 1. See page 39.
+
+
+
 #### 1.4.4 Throughput in Computer Networks
 
 Since the rate of the core of network is over-provisioned and tremendous, the constraining factor for throughput of today's Internet is normally at the access network.
