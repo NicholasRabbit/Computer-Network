@@ -69,3 +69,23 @@ Since the rate of the core of network is over-provisioned and tremendous, the co
 ### 1.5 Protocol Layers and Their Service Models 
 
 Messages exchanged by higher layer protocols such as HTTP, FTP, TCP, UDP, DNS, or IP are all eventually encapsulated in link-layer frames that are transmitted by physical media such as an Ethernet cable. Thus, a packet sniffer such as Wireshark can receive the copy of every link-layer frame to be analysed. 
+
+
+
+## Chapter 2 Application Layer
+
+### 2.2 The Web and HTTP
+
+#### 2.2.3 HTTP Message Format
+
+1. How to use `telent` ?
+
+   Note that it is a command in Linux, not in Windows.  
+
+   (1) Input `telnet gaia.cs.umass.edu 80`, press Enter.
+
+   (2) The input the next line, press Enter.
+
+   (3) Finally, input the last line, and press Enter twice. 
+
+   Don't input all the commands in one line !
