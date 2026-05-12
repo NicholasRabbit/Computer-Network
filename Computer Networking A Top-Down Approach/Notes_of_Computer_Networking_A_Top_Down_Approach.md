@@ -89,3 +89,55 @@ Messages exchanged by higher layer protocols such as HTTP, FTP, TCP, UDP, DNS, o
    (3) Finally, input the last line, and press Enter twice. 
 
    Don't input all the commands in one line !
+
+### 2.3 Electronic Mail in the Internet
+
+#### 2.3.1 SMTP
+
+1) In page 120, it suggested that I carry out a direct dialogue with a SMTP server. In fact, public mail servers like outlook and Gmail don't accept non-authenticated connection. Hence, I have to install a local mail server-Postfix-to do it. 
+
+OS: CentOS 7 x86_64 
+
+1.1) Install Postfix if it is not installed in CentOS 7.  See [installing postfix](../../Personal-Note\Note-1\Linux&Unix&Vim\Linux\CentOS\Notes of CentOS.md).
+
+1.2) Write an email to root to test. 
+
+```shell
+# 1. Start an SMTP session.
+telnet localhost 25
+# 2. Identify yourself. Say hello.
+EHLO test.local	
+# 3. Set the sender's address.
+MAIL FROM:<alice@test.com>
+# 4. Set a recipient. If you are using "root" in a LinuxOS, use the user's name.
+RCPT TO:<root>
+# 5. Start writing an email.
+DATA	# press Enter
+# Write your email
+Subject: Postfix Test
+
+Hello,
+This is a test email sent via telnet.
+
+Regards
+.	# Note this period is in the new line. 
+
+# 6. Quit the session.
+QUIT.
+```
+
+1.3) Check the mailbox to verify whether it is sent successfully. 
+
+```shell
+# 7 Check the mail log and we can see that root reveive an email. 
+# "postfix/smtp[...] to=<root@localhost> status=sent (delivered to mailbox)"
+tail -f /var/log/maillog
+# 8. Use "mail" to read the email. If it is not installed, install it. 
+mail
+# You will see something like
+> 1  root@mail  "Postfix Test"
+# Input 1 to open the email. 
+# 9. Quit the "mail".
+quit 
+```
+
